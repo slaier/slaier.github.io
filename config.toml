@@ -1,0 +1,38 @@
+baseURL = "https://slaier.github.io/"
+languageCode = "zh-cn"
+title = "Slaier's Blog"
+theme = "github-style"
+enableEmoji = true
+enableRobotsTXT = true
+hasCJKLanguage = true
+timeZone = "Asia/Shanghai"
+
+[params]
+  author = "Slaier"
+  url = "https://slaier.github.io/"
+  keywords = "blog"
+  rss = true
+  lastmod = true
+  favicon = "/images/github.png"
+  location = "China"
+
+[frontmatter]
+  lastmod = ["lastmod", ":fileModTime", ":default"]
+
+[privacy]
+  [privacy.disqus]
+    disable = true
+  [privacy.googleAnalytics]
+    disable = true
+  [privacy.instagram]
+    disable = true
+  [privacy.twitter]
+    disable = true
+  [privacy.vimeo]
+    disable = true
+  [privacy.youtube]
+    disable = true
+
+[imaging.exif]
+  disableDate = true
+  disableLatLong = true
