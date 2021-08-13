@@ -1,8 +1,8 @@
 ---
 title: "路由交换技术 - 以太网协议"
 date: 2021-08-07T22:35:10+08:00
-keywords: ["ethernet", "switch"]
-tags: ["ethernet", "switch"]
+keywords: ["ethernet", "switch", "l2"]
+tags: ["ethernet", "switch", "l2"]
 ---
 
 数据链路层中定义的协议有以太网协议(Ethernet)、高级数据链路控制(HDLC)、点对点协议(PPP)

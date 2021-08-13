@@ -3,6 +3,7 @@ title: "KMS激活Windows和Office"
 date: 2021-08-07T20:12:30+08:00
 keywords: ["kms", "windows", "office"]
 tags: ["kms", "windows", "office"]
+pin: true
 ---
 
 转自神代綺凛[《KMS激活》](https://moe.best/kms.html)
