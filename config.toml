@@ -6,15 +6,20 @@ enableEmoji = true
 enableRobotsTXT = true
 hasCJKLanguage = true
 timeZone = "Asia/Shanghai"
+pygmentsCodeFences = true
+pygmentsUseClasses = true
 
 [params]
   author = "Slaier"
-  url = "https://slaier.github.io/"
+  desciption = "In solitude, where we are least alone."
+  github = "slaier"
+  url = "https://slaier.github.io"
   keywords = "blog"
   rss = true
   lastmod = true
   favicon = "/images/github.png"
   location = "China"
+  userStatusEmoji = "😸"
 
 [frontmatter]
   lastmod = ["lastmod", ":fileModTime", ":default"]
