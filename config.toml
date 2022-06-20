@@ -1,4 +1,4 @@
-baseURL = "https://slaier.github.io/"
+baseURL = "https://slaier.github.io"
 languageCode = "zh-cn"
 title = "Slaier's Blog"
 theme = "github-style"
