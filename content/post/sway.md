@@ -117,9 +117,3 @@ programs.sway = {
 bar swaybar_command ${pkgs.waybar}/bin/waybar
 ''
 ```
-
-### Waybar 时间不刷新
-
-可能是因为启用了硬件时间，出现了时间偏移。
-
-需要打入此补丁：[fix_clock.patch](https://raw.githubusercontent.com/Slaier/nixos-profile/e38d47a4a036f1ba9b64f3cc191347091e687507/overlays/waybar/fix_clock.patch)。
