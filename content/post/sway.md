@@ -53,33 +53,15 @@ ${pkgs.rofi-wayland}/bin/rofi -show drun
 ''
 ```
 
-### 使用 rofi 切换窗口
+### 切换窗口
 
-这里需要使用一个脚本，rofi-wayland 没有直接集成此功能。
+rofi-wayland 没有直接集成此功能，使用swayr进行替代。
 
 ```nix
-# https://gist.github.com/lbonn/89d064cde963cfbacabd77e0d3801398
-sway-window-switcher = pkgs.writeTextFile {
-  name = "sway-window-switcher";
-  destination = "/bin/sway-window-switcher";
-  executable = true;
-
-  text = ''
-    set -euo pipefail
-    tree=$(swaymsg -t get_tree)
-    readarray -t win_ids <<< "$(${pkgs.jq}/bin/jq -r '.. | objects | select(has("app_id")) | .id' <<< "$tree")"
-    readarray -t win_names <<< "$(${pkgs.jq}/bin/jq -r '.. | objects | select(has("app_id")) | .name' <<< "$tree")"
-    readarray -t win_types <<< "$(${pkgs.jq}/bin/jq -r '.. | objects | select(has("app_id")) | .app_id // .window_properties.class' <<< "$tree")"
-    switch () {
-        local k
-        read -r k
-        swaymsg "[con_id=''${win_ids[$k]}] focus"
-    }
-    for k in $(seq 0 $((''${#win_ids[@]} - 1))); do
-        echo -e "<span weight=\"bold\">''${win_types[$k]}</span> - ''${win_names[$k]}"
-    done | ${pkgs.rofi-wayland}/bin/rofi -dmenu -markup-rows -i -p window -format i | switch
-  '';
-};
+''
+  bindsym ${mod}+Shift+d exec ${lib.getExe pkgs.swayr} switch-window
+  bindsym ${mod}+Tab     exec ${lib.getExe pkgs.swayr} switch-to-urgent-or-lru-window
+''
 ```
 
 ## 疑难解答
@@ -89,24 +71,6 @@ sway-window-switcher = pkgs.writeTextFile {
 这是因为 sway 还没有实现 input-method popups。
 
 可以打入该补丁：[0001-text_input-Implement-input-method-popups.patch](https://raw.githubusercontent.com/Slaier/nixos-profile/39f35767099c5083ee416909643a10fc9b0f9ca3/overlays/sway/0001-text_input-Implement-input-method-popups.patch)。
-
-### Telegram 无法使用 Fcitx
-
-这是因为启动 sway 时没有导入一些环境变量，例如 Telegram 需要的 `QT_PLUGIN_PATH`。
-
-所以你从 term 启动 Telegram 能正常使用，而通过 rofi 启动无法使用 Fcitx。
-
-可以通过以下 commands 导入所有环境变量。
-
-```nix
-programs.sway = {
-  extraSessionCommands = ''
-    source /etc/profile
-    test -f $HOME/.profile && source $HOME/.profile
-    systemctl --user import-environment
-  '';
-};
-```
 
 ### Swaybar 的 tray icon 无法正常使用
 
