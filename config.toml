@@ -17,8 +17,8 @@ pygmentsUseClasses = true
   keywords = "blog"
   rss = true
   lastmod = true
-  favicon = "/images/github.png"
-  headerIcon = "/images/GitHub-Mark-Light-32px.png"
+  favicon = "/images/github-mark.png"
+  headerIcon = "/images/github-mark-white.png"
   location = "China"
   userStatusEmoji = "😸"
 
