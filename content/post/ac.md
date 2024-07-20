@@ -12,6 +12,7 @@ tags: ["android", "aosp"]
 | Binary Eye        | Latest                                  | Open Source  |
 | DAVx5             | Latest                                  | Open Source  |
 | Fcitx5            | Latest                                  | Open Source  |
+| FluffyChat        | Latest                                  | Open Source  |
 | Password Store    | Latest                                  | Open Source  |
 | PiliPala          | 1.0.23.0505                             | Open Source  |
 | Termux            | Latest                                  | Open Source  |
