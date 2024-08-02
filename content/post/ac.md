@@ -12,12 +12,13 @@ tags: ["android", "aosp"]
 | Binary Eye        | Latest                                  | Open Source  |
 | DAVx5             | Latest                                  | Open Source  |
 | Fcitx5            | Latest                                  | Open Source  |
-| FluffyChat        | Latest                                  | Open Source  |
 | Password Store    | Latest                                  | Open Source  |
 | PiliPala          | 1.0.23.0505                             | Open Source  |
+| SchildiChat       | Latest                                  | Open Source  |
 | Termux            | Latest                                  | Open Source  |
 | Tieba Lite        | [4.0.0-beta1](https://t.me/tblite/97)   | Open Source  |
 | c001apk           | [559bea7(40)](https://t.me/c001apk/183) | Open Source  |
+| ntfy              | Latest                                  | Open Source  |
 | org.fossify.notes | Latest                                  | Open Source  |
 | otp helper        | Latest                                  | Open Source  |
 | Bmap              | 7.240415                                | Close Source |
@@ -28,6 +29,7 @@ tags: ["android", "aosp"]
 | AccuBattery       | Latest                                  | Mod          |
 | WPS Office        | Latest                                  | Mod          |
 | Alipay            | Latest                                  |              |
+| CMCC              | 9.3.0                                   |              |
 | beisen italent    | Latest                                  |              |
 | boc               | Latest                                  |              |
 | cmb               | 11.5.0                                  |              |
