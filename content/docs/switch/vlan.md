@@ -1,8 +1,6 @@
 ---
-title: "路由交换技术 - VLAN"
-date: 2021-08-08T11:17:42+08:00
-keywords: ["vlan", "switch", "l2"]
-tags: ["vlan", "switch", "l2"]
+weight: 3
+title: "VLAN"
 ---
 
 把一个LAN划分成多个逻辑的VLAN，每个VLAN是一个广播域，VLAN内的主机间通信就和在一个LAN内一样，而VLAN间则不能直接互通，这样，广播报文就被限制在一个VLAN内。

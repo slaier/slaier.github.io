@@ -3,6 +3,7 @@ title: "debian使用samba"
 date: 2021-11-01T20:46:40+08:00
 keywords: ["linux", "samba"]
 tags: ["linux", "samba"]
+bookFlatSection: true
 ---
 
 ## 服务端

@@ -4,6 +4,7 @@ date: 2022-07-16T12:00:00+08:00
 keywords: ["sway", "nixos"]
 tags: ["sway", "nixos"]
 pin: true
+bookFlatSection: true
 ---
 
 >Sway 是Wayland的合成器，也是 x11 的 i3 窗口管理器的替代品。它可以与您现有的 i3 配置一起工作，并支持 i3 的大部分特性以及一些附加功能。

@@ -1,0 +1,17 @@
+baseURL = "https://slaier.github.io"
+enableGitInfo = true
+enableEmoji = true
+hasCJKLanguage = true
+theme = "hugo-book"
+timeZone = "Asia/Shanghai"
+title = "Slaier's Blog"
+
+[menu]
+[[menu.after]]
+name = "Github"
+url = "https://github.com/slaier"
+weight = 10
+
+[params]
+BookTheme = 'auto'
+BookRepo = 'https://github.com/slaier/slaier.github.io'
