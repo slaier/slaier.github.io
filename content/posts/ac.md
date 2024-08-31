@@ -5,6 +5,10 @@ keywords: ["android", "aosp"]
 tags: ["android", "aosp"]
 ---
 
+刷机备忘录
+
+<!--more-->
+
 ## APP List
 
 | name              | version                                 | Note         |
@@ -29,7 +33,8 @@ tags: ["android", "aosp"]
 | AccuBattery       | Latest                                  | Mod          |
 | WPS Office        | Latest                                  | Mod          |
 | Alipay            | Latest                                  |              |
-| CMCC              | 9.3.0                                   |              |
+| Ct client         | 10.5.0                                  |              |
+| Ticktok           | Latest                                  |              |
 | beisen italent    | Latest                                  |              |
 | boc               | Latest                                  |              |
 | cmb               | 11.5.0                                  |              |
