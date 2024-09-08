@@ -11,39 +11,44 @@ tags: ["android", "aosp"]
 
 ## APP List
 
-| name              | version                                 | Note         |
-| ----------------- | --------------------------------------- | ------------ |
-| Binary Eye        | Latest                                  | Open Source  |
-| DAVx5             | Latest                                  | Open Source  |
-| Fcitx5            | Latest                                  | Open Source  |
-| Password Store    | Latest                                  | Open Source  |
-| PiliPala          | 1.0.23.0505                             | Open Source  |
-| SchildiChat       | Latest                                  | Open Source  |
-| Termux            | Latest                                  | Open Source  |
-| Tieba Lite        | [4.0.0-beta1](https://t.me/tblite/97)   | Open Source  |
-| c001apk           | [559bea7(40)](https://t.me/c001apk/183) | Open Source  |
-| ntfy              | Latest                                  | Open Source  |
-| org.fossify.notes | Latest                                  | Open Source  |
-| otp helper        | Latest                                  | Open Source  |
-| Bmap              | 7.240415                                | Close Source |
-| Mi Buds M8        | Latest                                  | Close Source |
-| Via               | Latest                                  | Close Source |
-| Leaf Calendar     | Latest                                  | Close Source |
-| 1DM+              | Latest                                  | Mod          |
-| AccuBattery       | Latest                                  | Mod          |
-| WPS Office        | Latest                                  | Mod          |
-| Alipay            | Latest                                  |              |
-| Ct client         | 10.5.0                                  |              |
-| Ticktok           | Latest                                  |              |
-| beisen italent    | Latest                                  |              |
-| boc               | Latest                                  |              |
-| cmb               | 11.5.0                                  |              |
-| jingdong          | Latest                                  |              |
-| meituan           | Latest                                  |              |
-| qq                | Latest                                  |              |
-| taobao            | Latest                                  |              |
-| wechat            | Latest                                  |              |
-| xianyu            | Latest                                  |              |
+| name              | version         | tags |
+| ----------------- | --------------- | ---- |
+| Binary Eye        | Latest          | OSS  |
+| DAVx5             | Latest          | OSS  |
+| *DataBackup*      | Latest          | OSS  |
+| Fcitx5            | Latest          | OSS  |
+| Password Store    | Latest          | OSS  |
+| PiliPala          | 1.0.23.0505     | OSS  |
+| SchildiChat       | Latest          | OSS  |
+| Termux            | Latest          | OSS  |
+| Tieba Lite        | 4.0.0-beta1[^1] | OSS  |
+| c001apk           | 559bea7(40)[^2] | OSS  |
+| ntfy              | Latest          | OSS  |
+| org.fossify.notes | Latest          | OSS  |
+| otp helper        | Latest          | OSS  |
+| AGC               | Latest          | CSS  |
+| Bmap              | 7.240415        | CSS  |
+| Leaf Calendar     | Latest          | CSS  |
+| Mi Buds M8        | Latest          | CSS  |
+| Notify for Xiaomi | Latest          | CSS  |
+| Sleep             | Latest          | CSS  |
+| Via               | Latest          | CSS  |
+| 1DM+              | Latest          | Mod  |
+| *AccuBattery*     | Latest          | Mod  |
+| WPS Office        | Latest          | Mod  |
+| Alipay            | Latest          | CNS  |
+| Ct client         | 10.5.0          | CNS  |
+| Ticktok           | Latest          | CNS  |
+| beisen italent    | Latest          | CNS  |
+| boc               | Latest          | CNS  |
+| cmb               | 11.5.0          | CNS  |
+| jingdong          | Latest          | CNS  |
+| meituan           | Latest          | CNS  |
+| qq                | Latest          | CNS  |
+| taobao            | Latest          | CNS  |
+| wechat            | Latest          | CNS  |
+| wheelview         | Latest          | CNS  |
+| xianyu            | Latest          | CNS  |
 
 ## Backup Check List
 
@@ -76,3 +81,6 @@ adb shell settings put global ntp_server ntp.sjtu.edu.cn
 adb shell cmd network_time_update_service force_refresh
 adb shell cmd network_time_update_service dump
 ```
+
+[^1]: https://t.me/tblite/97
+[^2]: https://t.me/c001apk/183
