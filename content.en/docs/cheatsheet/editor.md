@@ -47,4 +47,11 @@ title: "Editor"
 *   **Transform (y)**: Transforms characters.
     ```bash
     sed 'y/abc/ABC/' filename # Transforms 'a' to 'A', 'b' to 'B', and 'c' to 'C'
-```
+    ```
+
+### Complex Sed Commands
+
+* Removes colors.
+    ```bash
+    sed -r "s/\x1B\[([0-9]{1,3}(;[0-9]{1,2};?)?)?[mGK]//g" filename
+    ```
