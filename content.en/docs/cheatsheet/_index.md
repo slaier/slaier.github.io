@@ -1,5 +1,5 @@
 ---
 weight: 2
 bookFlatSection: true
-title: "CheatSheet"
+title: "Cheat Sheet"
 ---

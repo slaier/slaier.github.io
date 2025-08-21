@@ -6,7 +6,18 @@ theme = "hugo-book"
 timeZone = "Asia/Shanghai"
 title = "Slaier's Blog"
 
-[menu]
+defaultContentLanguage = "zh"
+
+[languages]
+[languages.en]
+  languageName = "English"
+  contentDir = "content.en"
+  weight = 1
+[languages.zh]
+  languageName = "中文"
+  contentDir = "content.zh"
+  weight = 2
+
 [[menu.home]]
   name = "路由交换"
   url = "/docs/switch/ethernet/"
