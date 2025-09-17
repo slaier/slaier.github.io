@@ -1,0 +1,30 @@
+name: Update Theme
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '14 3 6 * *' # monthly
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          submodules: "recursive"
+          fetch-depth: 0
+
+      - uses: sgoudham/update-git-submodules@v2.1.3
+        id: submodules
+        with:
+          strategy: tag
+
+      - name: Create PR
+        uses: peter-evans/create-pull-request@v6
+        if: ${{ steps.submodules.outputs['hugo-book--updated'] }}
+        with:
+          commit-message: "feat: update alex-shpak/hugo-book to ${{ steps.submodules.outputs['hugo-book--latestTag'] }}"
+          branch: "feat/update-hugo-book-${{ steps.submodules.outputs['hugo-book--latestTag'] }}"
+          title: "feat: update alex-shpak/hugo-book submodule to ${{ steps.submodules.outputs['hugo-book--latestTag'] }}"
+          body: ${{ steps.submodules.outputs.prBody }}
