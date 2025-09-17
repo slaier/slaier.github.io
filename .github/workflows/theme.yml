@@ -21,7 +21,7 @@ jobs:
           strategy: tag
 
       - name: Create PR
-        uses: peter-evans/create-pull-request@v6
+        uses: peter-evans/create-pull-request@v7
         if: ${{ steps.submodules.outputs['hugo-book--updated'] }}
         with:
           commit-message: "feat: update alex-shpak/hugo-book to ${{ steps.submodules.outputs['hugo-book--latestTag'] }}"
